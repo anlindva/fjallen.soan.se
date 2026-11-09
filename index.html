@@ -4,128 +4,152 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fjällfest i Himmelfjäll – 18–21 mars 2027</title>
-<meta name="description" content="Ia och Andreas bjuder in till fjällfest i stugan i Himmelfjäll 18–21 mars 2027.">
+<meta name="description" content="Ia och Andreas bjuder in till fjällfest i Himmelfjäll 18–21 mars 2027.">
 <meta property="og:title" content="Fjällfest i Himmelfjäll – 18–21 mars 2027">
-<meta property="og:description" content="Skidåkning, bastu och fest i stugan. OSA senast 13 december.">
+<meta property="og:description" content="Skidor, after ski, bastu och fest. OSA senast 13 december.">
 <meta property="og:image" content="https://fjallen.soan.se/stugan.jpg">
 <meta property="og:url" content="https://fjallen.soan.se/">
 <meta name="robots" content="noindex">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
+<meta name="theme-color" content="#2A62AA">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛷️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#1F3A4A; --on-navy:#FFFFFF; --on-navy-soft:#D3E1E3; --ice:#BFD6DA;
-  --ground:#F6F4F0; --ink:#1F3A4A; --ink-soft:#45525A; --rule:#DDD8CF;
-  --accent:#A64A28; --accent-hover:#7E361C; --card:#FFFFFF;
+  --red:#C3322B; --red-hover:#9A2620; --on-red:#F6EEE2;
+  --paper:#F6EEE2; --card:#FFFFFF; --ink:#2A2522; --ink-soft:#5C534C; --pine:#1F3B36; --rule:#E2D5C3;
+  --shadow:rgba(195,50,43,0.18);
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --navy:#14262F; --on-navy:#FFFFFF; --on-navy-soft:#C5D4D6; --ice:#BFD6DA;
-    --ground:#162127; --ink:#EEF0EC; --ink-soft:#B9C3C3; --rule:#2E3C42;
-    --accent:#E39A78; --accent-hover:#EEB79D; --card:#1C2A31;
+    --red:#E0574C; --red-hover:#EC7F76; --on-red:#1E1A17;
+    --paper:#1E1A17; --card:#2A2420; --ink:#F3EADC; --ink-soft:#C9BCAA; --pine:#A9D1C4; --rule:#3B332D;
+    --shadow:rgba(0,0,0,0.35);
     color-scheme: dark;
   }
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--ground);color:var(--ink);font-family:"Work Sans","Helvetica Neue",Arial,sans-serif;font-size:1.125rem;line-height:1.55}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Josefin Sans","Futura","Century Gothic",sans-serif;font-size:1.15rem;line-height:1.55}
 img{max-width:100%;display:block}
-a{color:var(--accent)} a:hover{color:var(--accent-hover)}
-a:focus-visible,.btn:focus-visible{outline:3px solid var(--ice);outline-offset:3px;border-radius:4px}
-.display{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;letter-spacing:.005em;line-height:.95}
+a{color:var(--red)} a:hover{color:var(--red-hover)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.script{font-family:"Yellowtail","Brush Script MT",cursive;font-weight:400}
 
-header{background:var(--navy);color:var(--on-navy);padding:calc(env(safe-area-inset-top,0px) + clamp(2.5rem,7vw,5rem)) clamp(1.25rem,6vw,4.5rem) clamp(2rem,5vw,3.5rem)}
-.wrap{max-width:68rem;margin:0 auto}
-.kicker{margin:0 0 .75rem;color:var(--ice);font-weight:500;font-size:clamp(1.05rem,2.4vw,1.35rem)}
-h1{margin:0;font-size:clamp(5rem,20vw,13rem)}
-.when{margin:1rem 0 0;font-size:clamp(1.4rem,3.6vw,2.25rem);font-weight:500}
+/* Affischen: skalar som en bild, all text i containerenheter */
+.poster-wrap{padding:0}
+.poster{position:relative;width:100%;max-width:900px;margin:0 auto;aspect-ratio:874/950;overflow:hidden;container-type:inline-size;background:#2A62AA;border-bottom:8px solid #C3322B}
+.land{position:absolute;inset:0;width:100%;height:100%;display:block}
+.title{position:absolute;left:6.4%;top:calc(6.7% + env(safe-area-inset-top,0px));right:6.4%;display:flex;flex-direction:column;align-items:flex-start;gap:.5cqw}
+.kicker{margin:0;font-size:3.2cqw;font-weight:600;letter-spacing:.08em;color:#F6EEE2}
+h1{margin:0;font-size:22.4cqw;line-height:1.05;color:#C3322B;text-shadow:.7cqw .7cqw 0 #F6EEE2;transform:rotate(-6deg);transform-origin:left center;padding:0 2.4cqw 0 .8cqw}
+.when{margin:1.6cqw 0 0;background:#C3322B;color:#F6EEE2;font-size:3.66cqw;font-weight:700;letter-spacing:.04em;padding:1.4cqw 2.6cqw 1cqw;box-shadow:.55cqw .55cqw 0 rgba(23,40,70,.35)}
+.snap{position:absolute;left:52.2%;top:58.5%;margin:0;background:#FFFFFF;padding:1.6cqw 1.6cqw 5cqw;box-shadow:0 1.2cqw 2.8cqw rgba(23,40,70,.28);transform:rotate(4deg)}
+.snap img{width:38.9cqw;height:28.6cqw;object-fit:cover;object-position:75% 100%}
+.snap figcaption{position:absolute;left:0;right:0;bottom:.8cqw;text-align:center;font-size:3.4cqw;color:#2A2522}
+.tag{position:absolute;left:6.9%;top:79.8%;margin:0;font-size:6.4cqw;line-height:1;color:#C3322B;transform:rotate(-6deg);transform-origin:left top}
+@media (min-width:940px){
+  .poster-wrap{padding:48px 24px 0}
+  .poster{border:12px solid #FFFFFF;border-bottom-width:12px;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+}
 
-.hero{margin:0;background:var(--navy)}
-.hero img{width:100%;height:clamp(18rem,62vw,44rem);object-fit:cover;object-position:50% 100%}
-
-main{padding:clamp(2.5rem,7vw,5rem) clamp(1.25rem,6vw,4.5rem) calc(env(safe-area-inset-bottom,0px) + 4rem)}
-section{margin-bottom:clamp(3.5rem,8vw,6rem)}
-.intro{max-width:40rem}
-.intro p{margin:0;font-size:clamp(1.3rem,2.8vw,1.75rem);line-height:1.4;font-weight:500}
-.intro .adults{margin-top:1rem;font-size:1.125rem;font-style:italic;font-weight:400;color:var(--ink-soft)}
-
-h2{margin:0 0 1.75rem;font-size:clamp(2.75rem,7vw,4.5rem)}
-
-.days{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:2.5rem 2.5rem}
-.day{border-top:5px solid var(--accent);padding-top:1rem}
-.day .date{margin:0;color:var(--accent);font-weight:600;font-size:1.05rem}
-.day h3{margin:.35rem 0 .6rem;font-size:2.4rem}
-.day p{margin:0 0 .5rem;color:var(--ink-soft);max-width:34ch}
+main{padding:clamp(2.5rem,7vw,4.5rem) clamp(1.25rem,6vw,3rem) calc(env(safe-area-inset-bottom,0px) + 4rem)}
+.wrap{max-width:56rem;margin:0 auto}
+section{margin-bottom:clamp(3.5rem,8vw,5rem)}
+.intro p{margin:0;font-size:clamp(1.35rem,3vw,1.85rem);line-height:1.4;font-weight:600;max-width:36rem}
+.intro .adults{margin-top:.9rem;font-size:1.1rem;font-weight:400;color:var(--ink-soft)}
+h2{margin:0 0 1.5rem;font-size:clamp(3.5rem,11vw,5.5rem);line-height:1;color:var(--red)}
+.days{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1.5rem}
+.day{background:var(--card);border-radius:6px;padding:1.5rem 1.6rem 1.6rem;box-shadow:4px 4px 0 var(--shadow)}
+.day .date{margin:0;font-weight:700;letter-spacing:.06em;color:var(--red);font-size:1rem}
+.day h3{margin:.2rem 0 .5rem;font-size:3rem;line-height:1.05;color:var(--pine)}
+.day p{margin:0 0 .5rem;color:var(--ink-soft)}
 .day .evening{color:var(--ink)}
-.day .evening strong{font-weight:600}
-
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:2rem;border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);padding:2rem 0}
-.facts h3{margin:0 0 .4rem;font-size:1.05rem;font-weight:600;color:var(--ink-soft)}
-.facts p{margin:0;max-width:30ch}
-
-.osa{background:var(--navy);color:var(--on-navy);padding:clamp(2rem,6vw,3.5rem);margin-bottom:0}
-.osa h2{margin-bottom:1rem;font-size:clamp(2.75rem,8vw,5rem)}
-.osa p{margin:0 0 1.75rem;color:var(--on-navy-soft);max-width:38rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr));gap:1.75rem;border-top:3px solid var(--rule);border-bottom:3px solid var(--rule);padding:2rem 0}
+.facts h3{margin:0 0 .35rem;font-size:1rem;font-weight:700;letter-spacing:.06em;color:var(--red)}
+.facts p{margin:0}
+.osa{background:var(--red);color:var(--on-red);border-radius:6px;padding:clamp(2rem,6vw,3.25rem);margin-bottom:0}
+.osa h2{color:var(--on-red);font-size:clamp(3rem,10vw,5rem);margin-bottom:1rem}
+.osa p{margin:0 0 1.5rem;max-width:36rem}
 .actions{display:flex;flex-wrap:wrap;gap:.875rem}
-.btn{display:inline-flex;align-items:center;min-height:3.25rem;padding:.8rem 1.5rem;border-radius:999px;font-weight:600;text-decoration:none;font-size:1.075rem}
-.btn-primary{background:var(--on-navy);color:#1F3A4A}
-.btn-primary:hover{background:var(--ice);color:#1F3A4A}
-.btn-ghost{border:2px solid var(--on-navy-soft);color:var(--on-navy)}
-.btn-ghost:hover{border-color:var(--on-navy);color:var(--on-navy)}
-.sign{margin-top:2.25rem !important;color:var(--on-navy) !important;font-weight:600;font-size:1.25rem}
+.btn{display:inline-flex;align-items:center;min-height:3.25rem;padding:.9rem 1.5rem .7rem;border-radius:999px;font-weight:700;text-decoration:none;font-size:1.05rem}
+.btn-primary{background:var(--on-red);color:var(--red)}
+.btn-primary:hover{background:var(--paper);color:var(--red-hover)}
+.btn-ghost{border:2px solid var(--on-red);color:var(--on-red)}
+.btn-ghost:hover{color:var(--on-red);opacity:.85}
+.osa .osa-btn:focus-visible{outline-color:var(--on-red)}
+.sign{margin:2rem 0 0;font-size:clamp(2.25rem,7vw,3rem);line-height:1.15}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <p class="kicker">Ia och Andreas bjuder in till</p>
-    <h1 class="display">Fjällfest</h1>
-    <p class="when">Himmelfjäll, 18–21 mars 2027</p>
+<header class="poster-wrap">
+  <div class="poster">
+    <svg viewBox="0 0 874 950" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" class="land" aria-hidden="true">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A62AA"/><stop offset="0.55" stop-color="#78A8DB"/><stop offset="1" stop-color="#B9D3EE"/></linearGradient></defs>
+<rect width="874" height="1240" fill="url(#sky)"/>
+<g fill="#FFFFFF" opacity="0.85"><ellipse cx="720" cy="120" rx="70" ry="22"/><ellipse cx="770" cy="108" rx="44" ry="20"/><ellipse cx="110" cy="460" rx="60" ry="16"/><ellipse cx="150" cy="450" rx="38" ry="15"/></g>
+<polygon fill="#D7E4F3" points="0,580 80,500 150,545 250,430 330,495 420,395 505,470 590,410 690,500 790,440 874,490 874,780 0,780"/>
+<polygon fill="#A9C2E2" points="250,430 270,500 240,560 300,780 380,780 330,495"/>
+<polygon fill="#A9C2E2" points="590,410 600,480 570,560 640,780 720,780 690,500"/>
+<polygon fill="#FFFFFF" points="40,780 200,590 270,630 380,470 450,540 520,450 640,610 730,560 874,660 874,780"/>
+<polygon fill="#C4D6EC" points="380,470 392,560 355,640 410,780 500,780 450,540"/>
+<polygon fill="#C4D6EC" points="520,450 530,540 505,610 560,780 650,780 640,610"/>
+<polygon fill="#C4D6EC" points="200,590 210,660 180,720 220,780 290,780 270,630"/>
+<g fill="#1F3B36"><polygon points="-10,742 2,684 14,742"/><polygon points="4,740 13,699 22,740"/><polygon points="17,749 26,705 36,749"/><polygon points="29,744 44,674 59,744"/><polygon points="43,751 56,686 70,751"/><polygon points="56,755 65,712 74,755"/><polygon points="66,741 82,667 98,741"/><polygon points="91,756 107,678 124,756"/><polygon points="116,756 132,682 147,756"/><polygon points="135,739 146,687 157,739"/><polygon points="149,747 158,701 168,747"/><polygon points="160,741 175,669 191,741"/><polygon points="180,743 195,670 211,743"/><polygon points="195,744 210,670 226,744"/><polygon points="213,740 228,667 244,740"/><polygon points="233,744 249,667 265,744"/><polygon points="253,751 268,679 283,751"/><polygon points="275,756 289,689 303,756"/><polygon points="297,747 309,686 322,747"/><polygon points="310,745 321,696 331,745"/><polygon points="320,754 332,697 344,754"/><polygon points="335,752 347,693 360,752"/><polygon points="349,741 358,699 366,741"/><polygon points="360,748 370,700 380,748"/><polygon points="370,751 384,682 399,751"/><polygon points="383,755 392,713 401,755"/><polygon points="395,748 407,690 419,748"/><polygon points="412,753 428,677 444,753"/><polygon points="433,740 447,673 461,740"/><polygon points="454,753 465,698 477,753"/><polygon points="470,739 478,697 487,739"/><polygon points="482,756 494,699 506,756"/><polygon points="501,747 515,681 529,747"/><polygon points="521,738 533,678 546,738"/><polygon points="540,743 553,683 565,743"/><polygon points="557,739 571,670 586,739"/><polygon points="572,742 584,686 596,742"/><polygon points="589,750 602,687 615,750"/><polygon points="609,740 624,671 638,740"/><polygon points="624,755 637,692 650,755"/><polygon points="638,751 648,705 658,751"/><polygon points="653,751 664,696 676,751"/><polygon points="671,745 684,683 697,745"/><polygon points="684,742 695,693 705,742"/><polygon points="695,738 706,686 717,738"/><polygon points="709,743 725,668 740,743"/><polygon points="726,742 734,704 742,742"/><polygon points="735,756 748,695 761,756"/><polygon points="750,754 760,708 769,754"/><polygon points="765,752 774,711 782,752"/><polygon points="778,750 793,677 809,750"/><polygon points="796,741 809,678 823,741"/><polygon points="813,739 826,676 839,739"/><polygon points="826,752 837,701 848,752"/><polygon points="837,739 849,680 862,739"/><polygon points="849,742 865,668 880,742"/><polygon points="869,738 882,677 895,738"/><polygon points="881,750 892,699 903,750"/><rect x="0" y="742" width="874" height="14"/></g>
+<path fill="#F8FAFD" d="M0,752 Q300,728 874,762 L874,1240 L0,1240 Z"/>
+<path fill="#E3ECF6" d="M0,830 Q420,800 874,850 L874,870 Q420,826 0,850 Z"/>
+</svg>
+    <div class="title">
+      <p class="kicker">Ia &amp; Andreas bjuder in till</p>
+      <h1 class="script">Fjällfest</h1>
+      <p class="when">Himmelfjäll · 18–21 mars 2027</p>
+    </div>
+    <figure class="snap">
+      <img src="stugan.jpg" alt="Vårt hus i fjällen, insnöat bland granarna i Himmelfjäll" width="1800" height="1350">
+      <figcaption class="script">Vi ses här!</figcaption>
+    </figure>
+    <p class="tag script" aria-hidden="true">Skidor,<br>after ski<br>&amp; fest!</p>
   </div>
 </header>
-
-<figure class="hero"><img src="stugan.jpg" alt="Vårt hus i fjällen, insnöat bland granarna i Himmelfjäll" width="1800" height="1350"></figure>
 
 <main>
   <div class="wrap">
     <section class="intro">
-      <p>En helg med skidåkning, god mat, bastu och fest i vår fjällstuga – och vi vill gärna ha med er!</p>
+      <p>En helg med skidåkning, after ski, bastu, god mat och en riktig fest – och vi vill gärna ha med er!</p>
       <p class="adults">En helg för oss vuxna.</p>
     </section>
 
     <section aria-labelledby="program">
-      <h2 id="program" class="display">Programmet</h2>
+      <h2 id="program" class="script">Programmet</h2>
       <ol class="days">
         <li class="day">
           <p class="date">Torsdag 18 mars</p>
-          <h3 class="display">Ankomst</h3>
+          <h3 class="script">Ankomst</h3>
           <p>Kom upp när det passar, installera er och ta det lugnt inför helgen. Vi ordnar sovplatser från torsdag till söndag.</p>
         </li>
         <li class="day">
           <p class="date">Fredag 19 mars</p>
-          <h3 class="display">Fritt i fjällen</h3>
+          <h3 class="script">Fritt i fjällen</h3>
           <p>Dagen är fri: alpint, längd, turskidor eller kanske skoter. Gör det själv eller haka på någon.</p>
           <p class="evening"><strong>Kväll:</strong> middag på Lilla Vildt. Bordet är bokat, och var och en betalar sin egen nota.</p>
         </li>
         <li class="day">
           <p class="date">Lördag 20 mars</p>
-          <h3 class="display">Alpint &amp; fest</h3>
+          <h3 class="script">After ski &amp; fest</h3>
           <p>Gemensam dag i backarna på Idre Fjäll och after ski. Sedan åker vi till stugorna för dusch och bastu.</p>
           <p class="evening"><strong>Kväll:</strong> middag och fest hos oss – vi bjuder!</p>
         </li>
         <li class="day">
           <p class="date">Söndag 21 mars</p>
-          <h3 class="display">Hemfärd</h3>
+          <h3 class="script">Hemfärd</h3>
           <p>Frukost och hemresa – med ömma ben och fina minnen.</p>
         </li>
       </ol>
     </section>
 
-    <section aria-labelledby="praktiskt">
-      <h2 id="praktiskt" class="display">Bra att veta</h2>
+    <section aria-label="Bra att veta">
       <div class="facts">
         <div>
           <h3>Adress</h3>
@@ -143,13 +167,13 @@ h2{margin:0 0 1.75rem;font-size:clamp(2.75rem,7vw,4.5rem)}
     </section>
 
     <section class="osa" aria-labelledby="osa">
-      <h2 id="osa" class="display">OSA senast 13 december</h2>
+      <h2 id="osa" class="script">OSA senast 13 december</h2>
       <p>Svara till Andreas. Berätta vilka dagar ni kommer och om ni har allergier eller önskemål om maten.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="sms:+46722125988?&amp;body=Hej%21%20Vi%20kommer%20p%C3%A5%20fj%C3%A4llfesten.%20Dagar%3A%20%20Allergier%3A%20">Svara via sms</a>
-        <a class="btn btn-ghost" href="tel:+46722125988">Ring 0722-12 59 88</a>
+        <a class="btn btn-primary osa-btn" href="sms:+46722125988?&amp;body=Hej%21%20Vi%20kommer%20p%C3%A5%20fj%C3%A4llfesten.%20Dagar%3A%20%20Allergier%3A%20">Svara via sms</a>
+        <a class="btn btn-ghost osa-btn" href="tel:+46722125988">Ring 0722-12 59 88</a>
       </div>
-      <p class="sign">Varmt välkomna!<br>Ia &amp; Andreas</p>
+      <p class="sign script">Varmt välkomna!<br>Ia &amp; Andreas</p>
     </section>
   </div>
 </main>
